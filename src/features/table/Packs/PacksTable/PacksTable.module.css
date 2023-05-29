@@ -1,0 +1,11 @@
+.pagination {
+  display: flex;
+  align-items: center;
+}
+.table {
+}
+/*.link > p{*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*}*/

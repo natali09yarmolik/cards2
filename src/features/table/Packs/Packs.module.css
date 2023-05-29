@@ -1,0 +1,21 @@
+.container {
+  width: 90%;
+  height: calc(100vh - 50px);
+  margin-top: -60px;
+}
+
+.packsHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.packsBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+
+}

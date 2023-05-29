@@ -1,0 +1,27 @@
+.select {
+  display: inline-block;
+
+  width: 165px;
+  height: 24px;
+
+  font-size: 16px;
+
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-radius: 2px;
+}
+
+.select:focus {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-radius: 2px;
+}
+
+.select:after {
+}
+
+.option:hover {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-radius: 2px;
+}

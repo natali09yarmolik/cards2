@@ -1,0 +1,21 @@
+.buttonContainer {
+  width: max-content;
+  height: 30px;
+
+  font-family: 'Montserrat Thin', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+
+  background: #00bbc0;
+  border: none;
+  border-radius: 5px;
+}
+.buttonContainer:hover {
+  background: #009a9f;
+}
+.buttonContainer:active {
+  color: #00bbc0;
+
+  background: white;
+}

@@ -1,0 +1,18 @@
+.cell,.cell>div {
+    display: flex;
+    gap: 14px;
+}
+
+.cell button {
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: inherit;
+  border: 0;
+  border-radius: 50%;
+}
+.buttonLearn {
+  opacity: 0.3;
+}

@@ -1,0 +1,44 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+
+
+}
+.link {
+  width: 30%;
+  margin-bottom: 35px;
+
+  text-align: start;
+
+
+}
+.learnBlock {
+  width: 40%;
+  margin: 0 auto;
+
+  background-color: white;
+}
+.learnTitle {
+  margin: 15px auto;
+
+  font-size: 30px;
+}
+.learnQuestionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: left;
+
+  width: 100%;
+}
+.learnShots {
+  opacity: 0.5;
+}
+.learnCheckboxBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: left;
+}

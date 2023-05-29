@@ -1,0 +1,340 @@
+.cdStretchyNav {
+  pointer-events: none;
+
+  position: fixed;
+  z-index: 2;
+  top: 30px;
+  left: 30px;
+
+  width: initial;
+  height: initial;
+
+  line-height: initial;
+
+  background-color: initial;
+  box-shadow: none;
+}
+
+.cdStretchyNav .stretchyNavBg {
+  /* this is the stretching navigation background */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background: #333;
+  border-radius: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+  transition: height 0.2s, box-shadow 0.2s;
+}
+
+.navIsVisible {
+  pointer-events: auto;
+}
+
+.navIsVisible .stretchyNavBg {
+  height: 100%;
+
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cdNavTrigger {
+  pointer-events: auto;
+
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  /* replace text with image */
+  overflow: hidden;
+
+  width: 60px;
+  height: 60px;
+
+  color: transparent;
+  white-space: nowrap;
+
+  border-radius: 50%;
+}
+
+.cdNavTrigger span,
+.cdNavTrigger span::after,
+.cdNavTrigger span::before {
+  /* this is the hamburger icon */
+  position: absolute;
+
+  width: 16px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.cdNavTrigger span {
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  /* middle line of the hamburger icon */
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  transition: background-color 0.2s;
+}
+
+.cdNavTrigger span::after,
+.cdNavTrigger span::before {
+  /* top and bottom lines of the hamburger icon */
+  content: '';
+
+  top: 0;
+  left: 0;
+
+  backface-visibility: hidden;
+
+  transition: transform 0.2s;
+}
+
+.cdNavTrigger span::before {
+  transform: translateY(-6px);
+}
+
+.cdNavTrigger span::after {
+  transform: translateY(6px);
+}
+
+.navIsVisible > .cdNavTrigger span {
+  background-color: transparent;
+}
+
+.navIsVisible > .cdNavTrigger span::before {
+  transform: rotate(-45deg);
+}
+
+.navIsVisible > .cdNavTrigger span::after {
+  transform: rotate(45deg);
+}
+
+.cdStretchyNav ul {
+  position: relative;
+  z-index: 2;
+
+  padding: 53px 0 22px;
+
+  text-align: left;
+  list-style: none;
+
+  visibility: hidden;
+
+  transition: visibility 0.3s;
+}
+
+.cdStretchyNav ul li {
+  float: none;
+
+  transition: initial;
+}
+
+.cdStretchyNav ul a {
+  position: relative;
+
+  display: block;
+
+  height: 50px;
+  padding: 0 1em 0 calc(1em + 60px);
+
+  font-size: 16px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+
+  transition: color 0.2s;
+}
+
+.cdStretchyNav ul a::after {
+  /* navigation item icons */
+  content: '';
+
+  position: absolute;
+  top: 8px;
+  left: 22px;
+  transform: translateY(-50%) scale(0);
+
+  width: 16px;
+  height: 16px;
+
+  font-family: 'FontAwesome', sans-serif;
+  text-align: center;
+
+  opacity: 0.6;
+}
+
+.cdStretchyNav ul a::before {
+  /* line visible next to the active navigation item */
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateX(3px) translateY(-50%) scaleY(0);
+
+  width: 3px;
+  height: 16px;
+
+  background-color: #ffb400;
+}
+
+.cdStretchyNav ul li:first-of-type a::after {
+  /* change custom icon using Font Awesome Icons */
+  content: '\f015';
+}
+
+.cdStretchyNav ul li:nth-of-type(2) a::after {
+  content: '\f007';
+}
+
+.cdStretchyNav ul li:nth-of-type(3) a::after {
+  content: '\f0b1';
+}
+
+.cdStretchyNav ul li:nth-of-type(4) a::after {
+  content: '\f0e6';
+}
+
+.cdStretchyNav ul li:nth-of-type(5) a::after {
+  content: '\f2b6';
+}
+
+.cdStretchyNav ul span {
+  transform: translateX(-25px);
+  /* navigation item labels */
+  display: block;
+
+  opacity: 0;
+}
+
+.cdStretchyNav.navIsVisible ul {
+  visibility: visible;
+}
+
+.cdStretchyNav.navIsVisible ul a::after {
+  /* navigation item icons */
+  transform: translateY(-50%) scale(1);
+
+  transition: opacity 0.2s;
+  animation: scaleIn 0.15s backwards;
+}
+
+.cdStretchyNav.navIsVisible ul li.active a {
+  color: #ffffff;
+}
+
+.cdStretchyNav.navIsVisible ul li.active a::after {
+  opacity: 1;
+}
+
+.cdStretchyNav.navIsVisible ul li.active a::before {
+  transform: translateX(-3px) translateY(-50%) scaleY(1);
+
+  transition: transform 0.15s 0.3s;
+}
+
+.cdStretchyNav.navIsVisible ul span {
+  transform: translateX(0);
+
+  opacity: 1;
+
+  transition: transform 0.2s;
+  animation: slideIn 0.15s backwards;
+}
+
+.cdStretchyNav.navIsVisible.lighter ul span {
+  text-shadow: none;
+}
+
+.cdStretchyNav.navIsVisible ul li:first-of-type a::after,
+.cdStretchyNav.navIsVisible ul li:first-of-type span {
+  animation-delay: 0.05s;
+}
+
+.cdStretchyNav.navIsVisible ul li:nth-of-type(2) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(2) span {
+  animation-delay: 0.1s;
+}
+
+.cdStretchyNav.navIsVisible ul li:nth-of-type(3) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(3) span {
+  animation-delay: 0.15s;
+}
+
+.cdStretchyNav.navIsVisible ul li:nth-of-type(4) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(4) span {
+  animation-delay: 0.2s;
+}
+
+.cdStretchyNav.navIsVisible ul li:nth-of-type(5) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(5) span {
+  animation-delay: 0.25s;
+}
+
+/* --------------------------------
+media
+-------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .cdStretchyNav {
+    /*display: none;*/
+  }
+}
+
+/* --------------------------------
+
+keyframes
+
+-------------------------------- */
+
+@keyframes scaleIn {
+  from {
+    transform: translateY(-50%) scale(0);
+  }
+
+  to {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-25px);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+.cdStretchyNav.navIsVisible ul li.active a,
+.cdStretchyNav.navIsVisible ul li.active a span,
+.cdStretchyNav.navIsVisible ul li a:hover,
+.cdStretchyNav.navIsVisible ul li a:hover span {
+  color: #ffb400;
+
+  opacity: 0.8;
+}
+
+.cdStretchyNav ul a,
+.cdStretchyNav ul a span,
+.dark-header .cdStretchyNav.lighter ul a span,
+.cdStretchyNav.lighter-in-portfolio ul a span {
+  color: rgba(0, 0, 0, 0.9);
+}
+.activeStyle,
+.activeStyle span {
+  color: #ffb400 !important;
+}

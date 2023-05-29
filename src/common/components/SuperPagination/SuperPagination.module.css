@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+
+  min-width: 200px;
+}
+
+.text1 {
+  margin-right: 10px;
+}
+
+.text2 {
+  margin-left: 10px;
+}

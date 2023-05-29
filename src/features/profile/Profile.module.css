@@ -1,0 +1,85 @@
+.profile {
+  width: 100%;
+  height: 100%;
+  margin-top: -25px;
+
+  font-family: 'Montserrat Thin', sans-serif;
+  color: #282c34;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.link {
+  width: 30%;
+  /*margin-top: 35px;*/
+  margin-bottom: 35px;
+
+  text-align: start;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+
+  color: #282c34;
+}
+
+.informBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 50%;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 10px;
+
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+/*.avatarPic {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}*/
+.changeName {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.nickNameField {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+}
+.spanBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.profileError {
+  font-size: 26px;
+  font-weight: 600;
+  color: #f13333;
+}
+
+.informBlock span {
+  opacity: 0.5;
+}

@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  height: 50px;
+
+  background-color: gray;
+}
+.buttonsBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding-top: 10px;
+}
+.nameBlock {
+  margin-right: 10px;
+
+  font-weight: bold;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  transition: 0.5s;
+}
+.avatar:hover {
+  scale: 1.2;
+}

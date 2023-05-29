@@ -1,0 +1,18 @@
+.searchQuestionBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 40px;
+}
+.iconsFilter {
+  width: 27px;
+  height: 27px;
+  margin-bottom: -20px;
+}
+.iconClose {
+  width: 100%;
+  height: 100%;
+}
