@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/natali09yarmolik/cards/static/css/main.b7339b4f.css",
-    "main.js": "/natali09yarmolik/cards/static/js/main.c534d199.js",
-    "static/js/787.2d81df44.chunk.js": "/natali09yarmolik/cards/static/js/787.2d81df44.chunk.js",
-    "static/media/close.png": "/natali09yarmolik/cards/static/media/close.186b3c1dd66af7e1d633.png",
-    "static/media/nothing-found.png": "/natali09yarmolik/cards/static/media/nothing-found.c400e18bddf20d62413b.png",
-    "static/media/avatar.webp": "/natali09yarmolik/cards/static/media/avatar.56f45eeb9a76068201f3.webp",
-    "static/media/editIcon.svg": "/natali09yarmolik/cards/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
-    "index.html": "/natali09yarmolik/cards/index.html",
-    "static/media/checked.svg": "/natali09yarmolik/cards/static/media/checked.0b6a1bcf5d417ff0a947.svg",
-    "static/media/Group 240.svg": "/natali09yarmolik/cards/static/media/Group 240.3aeabc34d32912299ce07e4a87c9d4ca.svg",
-    "main.b7339b4f.css.map": "/natali09yarmolik/cards/static/css/main.b7339b4f.css.map",
-    "main.c534d199.js.map": "/natali09yarmolik/cards/static/js/main.c534d199.js.map",
-    "787.2d81df44.chunk.js.map": "/natali09yarmolik/cards/static/js/787.2d81df44.chunk.js.map"
+    "main.css": "/natali09yarmolik/cards2/static/css/main.c5d3c180.css",
+    "main.js": "/natali09yarmolik/cards2/static/js/main.95370fa4.js",
+    "static/js/787.2d81df44.chunk.js": "/natali09yarmolik/cards2/static/js/787.2d81df44.chunk.js",
+    "static/media/close.png": "/natali09yarmolik/cards2/static/media/close.186b3c1dd66af7e1d633.png",
+    "static/media/nothing-found.png": "/natali09yarmolik/cards2/static/media/nothing-found.c400e18bddf20d62413b.png",
+    "static/media/avatar.webp": "/natali09yarmolik/cards2/static/media/avatar.56f45eeb9a76068201f3.webp",
+    "static/media/editIcon.svg": "/natali09yarmolik/cards2/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
+    "index.html": "/natali09yarmolik/cards2/index.html",
+    "static/media/checked.svg": "/natali09yarmolik/cards2/static/media/checked.0b6a1bcf5d417ff0a947.svg",
+    "static/media/Group 240.svg": "/natali09yarmolik/cards2/static/media/Group 240.3aeabc34d32912299ce07e4a87c9d4ca.svg",
+    "main.c5d3c180.css.map": "/natali09yarmolik/cards2/static/css/main.c5d3c180.css.map",
+    "main.95370fa4.js.map": "/natali09yarmolik/cards2/static/js/main.95370fa4.js.map",
+    "787.2d81df44.chunk.js.map": "/natali09yarmolik/cards2/static/js/787.2d81df44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7339b4f.css",
-    "static/js/main.c534d199.js"
+    "static/css/main.c5d3c180.css",
+    "static/js/main.95370fa4.js"
   ]
 }
